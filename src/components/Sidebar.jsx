@@ -31,7 +31,8 @@ const CryptoSidebar = () => {
   }
 
   return (
-    <div className='crypto-sidebar sm:max-w-md md:max-w-lg  p-4 shadow-md'>
+    <div className=''>
+    <div className='crypto-sidebar sm:max-w-md md:max-w-lg  p-4 shadow-md relative'>
       <h1 className='text-center text-lg'><b>Top Cryptocurrencies by Market Cap</b></h1>
       <div className="crypto-list space-y-4">
         {cryptoData && cryptoData.length > 0 ? (
@@ -50,6 +51,7 @@ const CryptoSidebar = () => {
           <p>No cryptocurrency data available.</p>
         )}
       </div>
+    </div>
     </div>
   );
 };
